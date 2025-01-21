@@ -64,3 +64,17 @@ Se föreläsning 0, "The computer and the operating system".
 6. Vad är en process? Kör `ps` för att se info om processen under din shell.
 7. Öppna "Task manager" eller "Activity Monitor" på din dator. Känner du igen
    någon av processerna? Kan du se hur mycket av systemets resurser de tar upp?
+
+> 1. Ett operativsystem är ett speciellt mjukvaruprogram som hanterar alla annan mjukvara som körs på datorn.
+>
+> 2. Korrekta svar: Windows (Oftast), annars MacOS, Linux eller ChromeOS
+>
+> 3. Terminalen är det traditionella sättet att interragera med en dator. Denna är också det mest hardvunärasättet att hantera operativsystemet.
+> 
+> 4. En fil är en abstrakt lagringsdel som hanteras av ditt os. Mappar är en typ av fil som innehåller en lista med namn där varje namn innehåller en länk till en fil.En Path är som en adress som beskriver vart en fil/mapp befinner sig i mappstrukturen.
+>
+> 5. En shell är ett speciellt program som låter dig använda OS-funktion. Det gör exempelvis att du kan skapa och ta bort filer & mappar.
+>
+> 6. En process är en abstraktion som ges av operativsystem för CPU:n och RAM som kör en instans av ett program. 
+> 
+> 7. Kännde du igen någon process? 
