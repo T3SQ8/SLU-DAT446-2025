@@ -8,7 +8,11 @@ Se föreläsning 5: Data validation, control flow, exceptions and generators
 
 2. Repetera samma sak fast för medianvärdesfunktionen. 
 
+Filerna `average.py` & `median.py` är uppdaterade med den nya funktionen `validate_data.py`. Det är en generell funktion som fungerar på både. 
+
 **Förbättring av extrauppgiften**
 - Se till att endast ett naturligt tal kan anges som valet av n (samt att det inte är 0) och ge ett felmedellande ifall fel input ges
 - Vad händer ifall listan är tom?
 - Vad händer ifall n är större än listans längd?
+
+Lösningen finns i filen `nth_largest.py`. Det är en modifierad variant av uppgiften från den tidigare föreläsningen.
