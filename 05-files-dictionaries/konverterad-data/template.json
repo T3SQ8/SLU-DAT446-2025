@@ -1,0 +1,21 @@
+{
+    "name": "",
+    "HP": -1,
+    "type": "",
+
+    "ability": {
+        "name": "",
+        "description": ""
+    },
+
+    "move": {
+        "name": "",
+        "cost": {
+            "type": "amount",
+            "secondaryType": -1
+        },
+        "damage": "",
+        "description": ""
+    }
+    
+}

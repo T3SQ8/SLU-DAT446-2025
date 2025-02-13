@@ -1,0 +1,3 @@
+Charizard, 170, Fire
+Battle Sense, Ability, Once during your turn, you may look at the top 3 cards of your deck and put 1 of them into your hand. Discard the other cards.
+Royal Blaze, Move, 2 Fire, 100+, This attack does 50 more damage for each Leon card in your discard pile.
