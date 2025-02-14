@@ -1,7 +1,8 @@
 Preparation inför Lab 2.
 
-Se till att du har installerat NumPy och Matplotlib.
+# Installera biblotek
 
+Se till att du har installerat NumPy och Matplotlib genom att köra
 ```bash
 pip3 install numpy matplotlib # lägg till --user om det behövs
 ```
@@ -53,3 +54,21 @@ arr_squared_list = [x**2 for x in arr_list]  # Slow, happens in Python
 end = time.time()
 print("Python list time:", end - start)
 ```
+
+
+# Multiplicera matriser
+
+
+Skriv en funktion som multiplicerar två matriser. Funktionen ska ta in två matriser och ge tillbaka
+[en matris](http://en.wikipedia.org/wiki/Matrix_multiplication#Definitions). Varje matris ska
+representeras av en lista som innehåller fler listor för varje rad. Exempelvis:
+
+```python
+m = [
+    [1, 2],
+    [3, 4],
+]
+```
+
+
+> Lösning finns i [`matrix.py`](matrix.py)
