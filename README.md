@@ -51,5 +51,6 @@ dictionaries
 ## Lab 2
 
 
-Installera och testa NumPy och Matplotlib.
+Installera och testa NumPy och Matplotlib. Multiplicera matricer i
+Python.
 
