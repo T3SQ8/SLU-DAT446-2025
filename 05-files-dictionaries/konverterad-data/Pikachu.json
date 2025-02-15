@@ -1,0 +1,1 @@
+{"name": "Pikachu", "HP": 60, "type": " Electric", "ability": {"name": "Pika Dash", "description": " If this Pok\u00e9mon has any Energy attached"}, "move": {"name": "Whimsy Tackle", "cost": {"1": "Electric", "2": "Free"}, "damage": " 50", "description": " Flip a coin. If tails, this attack does nothing. "}}

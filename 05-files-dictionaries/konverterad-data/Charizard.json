@@ -1,0 +1,1 @@
+{"name": "Charizard", "HP": 170, "type": " Fire", "ability": {"name": "Battle Sense", "description": " Once during your turn"}, "move": {"name": "Royal Blaze", "cost": {"2": "Fire"}, "damage": " 100+", "description": " This attack does 50 more damage for each Leon card in your discard pile."}}

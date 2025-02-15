@@ -10,10 +10,13 @@ Du är en del av ett företag som ska göra om ett kortspel för att digitaliser
 ## Del A: Inläsning av data
 - Börja med att skriva en funktion som läser in en fil med formatet som finns i `transkiberad-data/charizard.txt`
   - Funktionen ska ge (returnera) en dictionary med samma format `konverterad-data/template.json`
-- Skriv ytterligare en funktion som läser in alla data som finns i `transkriberad-data` & som konverterar datan med hjälp av den tidigare funktionen.
+- Skriv ytterligare en funktion som läser in alla data som finns i `transkriberad-data` & som konverterar datan med hjälp av den tidigare funktionen. Tips: Använd funktionen `os.listdir()`
   -  Funktionen ska returnera en lista med alla dictionaries som innehåler den konverterade datan från `transkriberad-data`
   
 > Vissa moves kan ha mer än kostnad, se `transkriberad-data/pikchu.txt`. Se till att ditt program kan hantera detta.
 
 ## Del B: Spara ned datan
-- Skriv en funktion som givet en lista av dictionaries skriver en .json-fil, där varje dictionary ska sparas som en separat fil med samma namn som dictionaryt har attributet 'name'
+- Skriv en funktion som givet en lista av dictionaries skriver en .json-fil, där varje dictionary ska sparas som en separat fil med samma namn som dictionaryt har attributet 'name'. Tips: Använd funktionen `json.dump()`
+
+
+> Lösningen till uppgiften finns i `data_converter.py`.
