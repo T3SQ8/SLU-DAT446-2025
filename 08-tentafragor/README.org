@@ -1,0 +1,67 @@
+
+* Question 2, [[https://github.com/jyp/python-courses-exams/blob/main/2403/facit-vt24.org][Mars 2024]]
+
+Write a function ~gene_match(gene,genome)~ that searches for a genetic
+subsequence in a genome.  The gene is given as a string. The genome is
+given as a file name.  Both the gene string and the genome file
+contents are comprised only of the characters ~A~, ~C~, ~G~ or
+~T~. The function should print all the positions in the genome where
+the gene can be found. Print the starting positions, indexed from
+zero. For example, if the gene contains ~ACA~ and the genome file
+contains ~GTACACAGT~, then both 2 and 4 should be printed.
+
+For half credits, you can assume that the genome file can fit in
+memory. For full credits, you must deal with files which cannot fit in
+memory.  In both cases, you can assume that the gene is smaller than
+the genome.
+
+Hints:
+   - if ~f~ is a file, then ~f.read(n)~ reads ~n~ characters from ~f~
+     and return them as a string. If the file has ~m~ characters
+     remaining to read and ~m<n~, then only ~m~ characters will be
+     read. In particular, at the end of the file, ~f.read~ always
+     returns the string.
+   - Within the *Exam Sandbox, Question 2*, you can open the file
+     "genome.txt". It has the contents GTACACAGT. You can use this
+     file for testing.
+
+
+* Question 3, [[https://github.com/jyp/python-courses-exams/blob/main/2206b/st22b.org][June 2022]]
+
+One professor had two lists of students. The first listed everyone who attended his/her first lecture
+and the other one with everyone who attended the second lecture. Now the professor needs to
+combine the two lists into one which says who has attended which lecture.
+Write a class ~ListMerger~ to solve the problem. The class should have the following components:
+An ~__init__~ Method which sets the initial state of the object.
+A method ~addStudent(name,lecture)~ which registers the fact that a student with the given
+name has attended the corresponding lecture.
+A method ~getNrOfLectures(name)~ which returns how many lectures the student with that
+name has attended.
+A method ~printList()~ which prints the combined list.
+It should be possible to use the class as follows:
+#+begin_src python
+merger = ListMerger()
+merger.addStudent("Erik", 1)
+merger.addStudent("Eva", 1)
+merger.addStudent("Gustav", 2)
+merger.addStudent("Mark", 2)
+merger.addStudent("Mary", 1)
+merger.addStudent("Erik", 2)
+merger.addStudent("Mark", 1)
+merger.printList()
+#+End_src
+the last method call should print the following:
+#+begin_example
+Erik 1 2
+Eva 1
+Gustav 2
+Mark 1 2
+Mary 1
+#+End_example
+The order in which the students are printed is not important but for each student the lecture
+numbers should be sorted. For the method ~getNrOfLectures(name)~ we have:
+#+begin_src python
+merger.getNrOfLectures("Erik") == 2
+merger.getNrOfLectures("Eva") == 1
+#+end_src
+

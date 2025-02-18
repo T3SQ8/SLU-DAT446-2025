@@ -51,6 +51,10 @@ Upprepning utifrån det som de som de flesta har tyckt var svår: Files,
 dictionaries
 
 
+## Föreläsning 8: ~~Lab 2~~ Tentafrågor
+
+Lab 2-liknande uppgifter finns ändå för den som är intresserad.
+
 ## Lab 1
 
 
