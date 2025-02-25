@@ -98,7 +98,7 @@ En annan fördel med att använda klasser är att om vi exempelvis nu skulle vil
 
 ```python
 
-def avstånd(self, other_point: Punkt)
+def avstånd(self, other_point: Punkt):
     return math.sqrt((self.x_pos - other_point.x_pos)**2 + (self.y_pos - other_point)**2)
 
 ```
