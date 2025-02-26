@@ -19,9 +19,9 @@ class Bil():
 
 ```
 
-### Init-funktionen
+### Konstruktor-funktionen
 
-Alla klasser (som inte är statiska) behöver en så kallad `__init__()`-funktion (initialize-function). Denna funktion körs när en instans av en klass skapas. Om init-funktionen har funktionsparametrar (i vårt fall length och fuel) skrivs de in när instansen skapas av klassen.
+Alla klasser (som inte är statiska) behöver en så kallad `__init__()`-funktion (initialize-function eller konstruktor). Denna funktion körs när en instans av en klass skapas. Om konstruktorn har funktionsparametrar (i vårt fall length och fuel) skrivs de in när instansen skapas av klassen.
 
 ```python
 
@@ -65,7 +65,7 @@ Istället använder vi en klass, som vi kaller för Punkt
 
 ```python
 class Punkt():
-    def __init__(x_position, y_position):
+    def __init__(self, x_position, y_position):
         self.x_pos = x_position
         self.y_pos = y_position
 
