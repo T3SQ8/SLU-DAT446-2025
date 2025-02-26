@@ -9,9 +9,10 @@ En klass är ett så kallat objekt, eller en sak. Kort sagt går det att beskriv
 ```python
 
 class Bil():
-    def __init__(length, fuel, efficiency):
+    def __init__(self, length, fuel, efficiency):
         self.length = length
-        self.fuel = fuel 
+        self.fuel = fuel
+        self.efficiency = efficency 
 
     def drive(self, distance):
         # <Nånting som borde hända när bilen kör>
@@ -19,13 +20,13 @@ class Bil():
 
 ```
 
-### Konstruktor-funktionen
+### Init-funktionen (Konstruktorn)
 
-Alla klasser (som inte är statiska) behöver en så kallad `__init__()`-funktion (initialize-function eller konstruktor). Denna funktion körs när en instans av en klass skapas. Om konstruktorn har funktionsparametrar (i vårt fall length och fuel) skrivs de in när instansen skapas av klassen.
+Alla klasser (som inte är statiska) behöver en så kallad konstruktor (`__init__()`-funktion). Denna funktion körs när en instans av en klass skapas. Om konstruktorn har funktionsparametrar (i vårt fall length, fuel och efficiency) skrivs de in när instansen skapas av klassen.
 
 ```python
 
-volvo_v70 = Bil("3m", 100)
+volvo_v70 = Bil("3m", 100, 0.5)
 
 ```
 
@@ -55,7 +56,7 @@ def drive(self, distance):
     self.fuel = old_fuel - usage # Uppdaterar fuel-variabeln för den specifika instansen av Bil som anropade drive()
 ```
 
-> **OBS**: När du anropar en metod skriver du aldrig self
+> **OBS**: När du anropar en metod utanför klassens kod använder du {instansnamn}.{metodnamn}. Om du anropar metoden från inuti klassens egna kod anropar du med metoden med self.{metodnamn}.
 
 ## Varför ska vi använda klasser?
 
@@ -98,16 +99,16 @@ En annan fördel med att använda klasser är att om vi exempelvis nu skulle vil
 
 ```python
 
-def avstånd(self, other_point: Punkt)
+def avstånd(self, other_point: Punkt):
     return math.sqrt((self.x_pos - other_point.x_pos)**2 + (self.y_pos - other_point)**2)
 
 ```
 
-Alltså fungerar klassen som ett sätt att gruppera kod. Vi grupperar data till något mer abstrakt, som att vi gör om 2 stycken tal till en punkt. Därefter gör vi något med datan, antingen som bara ger någonting men vi kan även vilja flytta datan och då är fördelaktigt att den är gruperad / kopplad.
+Alltså fungerar klassen som ett sätt att gruppera kod. Vi kan *abstraktera* kod och ge data en slags kontext, som att vi gör om 2 stycken tal till en punkt. Därefter gör vi något med datan, antingen som bara ger någonting men vi kan även vilja flytta datan och då är fördelaktigt att den är gruperad / kopplad.
 
 Tänk nu att vi våran punkt exempelvis skulle beskriva pingis-bollen i en variant av det klassiska spelet Pong. För att flytta på punkten ska vi skapa en ny funktion som förändrar informationen i vår punkt.
 
-Funktionen flytta ska ti en fart, alltså en absolut hastighet och en riktning (vinkel).
+Funktionen flytta ska ta in en hastighet, alltså en fart och en riktning (vinkel).
 
 ```python
 def flytta(self, fart, riktning):
