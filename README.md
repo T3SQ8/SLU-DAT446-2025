@@ -55,7 +55,12 @@ dictionaries
 
 Lab 2-liknande uppgifter finns ändå för den som är intresserad.
 
-## Lab 1
+## Föreläsning 9: Grundläggande objektivt orienterad programmering
+- [ ] Skapa klassen Rectangle
+- [ ] Skapa metoden get_perimeter
+- [ ] Skapa metoden get_area
+- [ ] Skapa metoden get_middle
+- [ ] Skapa metoden intersects (+ eventuella hjälpfunktioner)
 
 
 Övningsuppgift för Lab 1: `tokenize()`, dictionaries, mm.
