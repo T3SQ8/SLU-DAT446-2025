@@ -81,3 +81,7 @@ OOP.
 Installera och testa NumPy och Matplotlib. Multiplicera matricer i
 Python.
 
+
+## Interpreter
+
+Främst för de som har haft problem att köra sin kod.
