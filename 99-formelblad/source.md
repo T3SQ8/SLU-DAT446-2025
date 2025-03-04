@@ -2,27 +2,24 @@
 geometry: margin=1in
 classoption:
 - twocolumn
-title: Formelblad SLU 2025
+title: Cheat Sheet SLU 2025
 ---
 
+\pagenumbering{gobble}
 
 # Data Structures
-## Lists
 
 ```python
+# Lists
 fruits = ["apple", "banana", "orange"]
 fruits[1] == "banana"
-```
 
-## Dictionaries
-
-```python
+# Dictionaries
 fruit_weights = {
     "apple": 182,
     "banana": 118,
     "orange": 131,
 }
-
 fruit_weights["banana"] == 118
 ```
 
@@ -54,9 +51,11 @@ greet("Alice") == "Hello, Alice!"
 # File handling
 
 ```python
+# write to file
 with open("file.txt", "w") as file:
     file.write("Hello, World!")
 
+# read from file
 with open("file.txt", "r") as file:
     content = file.read()
 ```
