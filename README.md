@@ -65,6 +65,11 @@ Lab 2-liknande uppgifter finns ändå för den som är intresserad.
 
 Övningsuppgift för Lab 1: `tokenize()`, dictionaries, mm.
 
+## Föreläsning 10: ~~Graphical programming~~ Tentafrågor
+
+Vi skippar *Lecture 10: Graphical programming* och gör istället tentafrågor med
+OOP.
+
 
 ## Lab 2
 
