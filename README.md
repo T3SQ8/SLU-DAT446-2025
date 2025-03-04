@@ -1,6 +1,9 @@
 # SLU DAT446 2025
 
 
+# Cheat sheet
+
+Finns [här](99-formelblad/README.pdf)
 
 # Uppgifter
 
