@@ -71,6 +71,10 @@ Vi skippar *Lecture 10: Graphical programming* och gör istället tentafrågor m
 OOP.
 
 
+## Lab 1
+
+Övningsuppgifter som liknar Lab 1.
+
 ## Lab 2
 
 
