@@ -1,6 +1,9 @@
 # SLU DAT446 2025
 
 
+# Cheat sheet
+
+Finns [här](99-formelblad/README.pdf)
 
 # Uppgifter
 
@@ -65,6 +68,15 @@ Lab 2-liknande uppgifter finns ändå för den som är intresserad.
 
 Övningsuppgift för Lab 1: `tokenize()`, dictionaries, mm.
 
+## Föreläsning 10: ~~Graphical programming~~ Tentafrågor
+
+Vi skippar *Lecture 10: Graphical programming* och gör istället tentafrågor med
+OOP.
+
+
+## Lab 1
+
+Övningsuppgifter som liknar Lab 1.
 
 ## Lab 2
 
@@ -72,3 +84,7 @@ Lab 2-liknande uppgifter finns ändå för den som är intresserad.
 Installera och testa NumPy och Matplotlib. Multiplicera matricer i
 Python.
 
+
+## Interpreter
+
+Främst för de som har haft problem att köra sin kod.
