@@ -1,3 +1,3 @@
 
-README.pdf: source.md
+cheat_sheet.pdf: source.md
 	pandoc $< -o $@ 

@@ -12,7 +12,9 @@ title: Cheat Sheet SLU 2025
 ```python
 # Lists
 fruits = ["apple", "banana", "orange"]
-fruits[1] == "banana"
+fruits[1] # "banana"
+fruits.append("pineapple")
+fruits[3] # "pineapple"
 
 # Dictionaries
 fruit_weights = {
@@ -20,7 +22,8 @@ fruit_weights = {
     "banana": 118,
     "orange": 131,
 }
-fruit_weights["banana"] == 118
+
+fruit_weights["banana"] # 118
 ```
 
 # Loops
@@ -45,7 +48,7 @@ while x < 5:
 def greet(name):
     return f"Hello, {name}!"
 
-greet("Alice") == "Hello, Alice!"
+greet("Alice") # "Hello, Alice!"
 ```
 
 # File handling
@@ -72,5 +75,5 @@ class Person:
         return f"Hi, I'm {self.name}"
 
 p = Person("Bob", 25)
-p.greet()
+p.greet() # "Hi, I'm Bob"
 ```
