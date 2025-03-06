@@ -73,6 +73,11 @@ Lab 2-liknande uppgifter finns ändå för den som är intresserad.
 Vi skippar *Lecture 10: Graphical programming* och gör istället tentafrågor med
 OOP.
 
+## Föreläsning 11: Avancerad objektivt orienterad programmerad
+- [ ] Skapa en klass Item & implementera den
+- [ ] Skapa subklassen Food & implementera den
+- [ ] Skapa subklassen Weapon & implementera den 
+- [ ] Skapa subklassen Armour & implementera den
 
 ## Lab 1
 
