@@ -1,9 +1,9 @@
 # SLU DAT446 2025
 
 
-# Cheat sheet
+# [Cheat sheet](99-formelblad/cheat_sheet.pdf)
 
-Finns [här](99-formelblad/README.pdf)
+Kortfattad referensguide med det viktigaste som vi har gått igenom.
 
 # Uppgifter
 
