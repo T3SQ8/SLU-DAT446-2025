@@ -79,6 +79,10 @@ OOP.
 - [ ] Skapa subklassen Weapon & implementera den 
 - [ ] Skapa subklassen Armour & implementera den
 
+## Föreläsning 12: Tentafrågor och liknande
+
+Tentafrågor, Self-practice och andra frågor
+
 ## Lab 1
 
 Övningsuppgifter som liknar Lab 1.

@@ -1,0 +1,113 @@
+* Question 4 [[https://github.com/jyp/python-courses-exams/blob/main/2403/facit-vt24.org][Mars 2024]]
+
+Assume that a function P(x) processes an input x of size n in /kn²/
+seconds, where /k/ represents the speed of the computer. (That is P
+implements an algorithm of quadratic complexity.) With your current
+hardware, you process an input size one million in one day. You
+consider procuring new hardware which is 10 times faster. How big of
+an input would you be able to process in a day with this new hardware?
+
+(Just write your answer, not the reasoning behind it.)
+
+
+* Robot, Exam Preparation 3, Self Practice
+
+
+Write the class Robot which models the state of a robot which moves over a surface. It follows three commands: =turnLeft()=, =turnRight()= and =forward(n)=. The first two commands tell the robot to turn to the left/right while the last tells it to go forward with n number of steps.
+
+The class must maintain the current coordinates of the robot and its direction. The direction is one of the strings: 'NORTH', 'SOUTH', 'EAST', 'WEST', and indicates which world direction the robot is currently facing. The class must have the methods turnLeft(),turnRight() and forward(n) as well as:
+
++ =__init__(self)=: which sets the current coordinates to be =x=0= and =y=0= and the initial direction to be 'NORTH'.
++ =getPosition(self)=: which returns the current position as the tuple =(x,y)=.
++ =getDirection(self)=: which returns the current direction as a string.
+
+* Question 1 [[https://github.com/jyp/python-courses-exams/blob/main/2403/facit-vt24.org][Mars 2024]] (användes tidigare i [[../10-tentafrågor/README.org][10-tentafrågor]])
+
+The period of revolution (T) of a planet is connected with the mass of
+the sun M and the radius R of its orbit by the following formula,
+where G is the gravitational constant:
+  
+  T²= (4π²/GM)R³
+
+Write a Python function ~planet_period(name)~ which prints the period
+of rotation of the planet with the given ~name~, if it is a valid
+planet name. Otherwise, print "Unknown planet name".
+
+You can assume the following data (expressed in SI units--- meters, seconds, etc.):
+
+#+begin_src python
+M = 1.991e30
+G = 6.67e-11
+radii = {
+    "mercury": 57.9e9,
+    "venus": 108.2e9,
+    "earth": 149.6e9,
+    "mars": 228e9,
+    "jupiter": 779.3e9,
+    "saturn": 1427e9,
+    "uranus": 2871e9,
+    "neptune": 4497e9,
+    "pluto": 5913e9
+}
+#+end_src
+
+
+* Question 3 [[https://github.com/jyp/python-courses-exams/blob/main/2403/facit-vt24.org][Mars 2024]] (Continue from Q1)
+
+Write a class called ~Kepler~. Its goal is to record planet observations
+and estimate the radius of their orbits.
+
+The class should have the following methods:
+- ~__init__(self)~ which initializes the attributes
+- ~observe(self, planet_name, angle, time)~
+
+  This method records an observation of a given planet at a given
+  time, at a given angle in its orbit. You can assume that the angle
+  is given in radians.
+
+  Note: assuming two observations, respectively at times t₁,t₂ and
+  angles a₁, a₂ the one can estimate the period of revolution of the
+  planet to be 2π×(t₁-t₂)/(a₁-a₂).
+  You can further assume that t₂ > t₁ implies a₂ > a₁ and that observations
+  are reported in chronological order.
+
+- ~get_period(self,planet_name)~ This method will return an estimation
+  of the planet's period of revolution. You should compute this
+  estimation averaging the estimated period of revolution for all
+  /consecutive/ observations of the given planet. (Use the above formula
+  for each consecutive pair of observations and take the average.)
+
+  If there are not enough observations, this method should return ~None~.
+  
+- ~get_radius(self,planet_name)~
+
+  This method will return an estimation of the planet's radius using
+  the Kepler formula from Question 1 and the period estimated by ~get_period~.
+
+    If there are not enough observations, this method should return ~None~.
+
+- ~print_planets(self)~
+
+   This method will print a table with every planet's name, estimated
+   period and estimated radius.
+
+   If there are not enough observations for any given planet, print
+   ~None~ for period and radius.
+
+
+* Interaction between object (advanced)
+
+
+Design a simple video game using object-oriented programming. In this game, players can attack each other, and each attack decreases the opponent’s health. Your task is to implement a =Player= class that models these interactions.
+
+** Requirements:
+
+Player attributes:
++ =name=
++ =health=
++ =attack_power=
+
+Player methods:
++ =attack(self, enemy)=
++ =take_damage(self, damage)=
++ =is_alive(self)=
