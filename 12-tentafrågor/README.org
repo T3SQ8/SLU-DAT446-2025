@@ -111,3 +111,7 @@ Player methods:
 + =attack(self, enemy)=
 + =take_damage(self, damage)=
 + =is_alive(self)=
+
+#+begin_quote
+Lösning finns i [[video_game.py][=video_game.py=]]
+#+end_quote
