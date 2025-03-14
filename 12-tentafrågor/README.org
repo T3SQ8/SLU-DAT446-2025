@@ -21,6 +21,10 @@ The class must maintain the current coordinates of the robot and its direction. 
 + =getPosition(self)=: which returns the current position as the tuple =(x,y)=.
 + =getDirection(self)=: which returns the current direction as a string.
 
+#+begin_quote
+Lösning finns i [[robot.py][robot.py]]
+#+end_quote
+
 * Question 1 [[https://github.com/jyp/python-courses-exams/blob/main/2403/facit-vt24.org][Mars 2024]] (användes tidigare i [[../10-tentafrågor/README.org][10-tentafrågor]])
 
 The period of revolution (T) of a planet is connected with the mass of
@@ -50,6 +54,7 @@ radii = {
     "pluto": 5913e9
 }
 #+end_src
+
 
 
 * Question 3 [[https://github.com/jyp/python-courses-exams/blob/main/2403/facit-vt24.org][Mars 2024]] (Continue from Q1)
@@ -113,5 +118,5 @@ Player methods:
 + =is_alive(self)=
 
 #+begin_quote
-Lösning finns i [[video_game.py][=video_game.py=]]
+Lösning finns i [[video_game.py][video_game.py]]
 #+end_quote
